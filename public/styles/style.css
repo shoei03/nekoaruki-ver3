@@ -88,8 +88,9 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("../src/haikei2.png")
-    center / cover;
+  background:
+  url("../src/haikei_2.png") center / cover,
+  url("../src/haikei.png") center / cover;
 }
 
 .obstacle-1 {
