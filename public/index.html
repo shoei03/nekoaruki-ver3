@@ -21,6 +21,28 @@
   </head>
   <body>
     <header class="header">
+      <div class="photo">
+        <div id="p1722">
+          <div class="h-flex">
+            <div><button class="btn js-stop">
+                <img class="camera-button" src='src/backspace.png' alt='return home'>
+              </button></div>
+            <div><button class="btn js-start">
+                <img class="camera-button" src="src/photo_camera.png" alt="start camera">
+              </button></div>
+            <div><button class="btn js-change">
+                <img class="camera-button" src="src/change.png" alt="">
+              </button></div>
+            <div><button class="btn" id="takePhotoButton">
+                <img class="camera-button" src="src/camera.png" alt="take a photo">
+              </button></div>
+          </div>
+          <div>
+            <div class="js-camera">
+            <video width="640" height="480" id="video" autoplay="autoplay"></video>
+          </div>
+        </div>
+      </div>
       <div class="header__inner">
         <button
           id="js-hamburger"
@@ -69,28 +91,6 @@
       <img src="src/haikei_reiyasita.png" alt="" class="layer-1">
       <img src="src/haikei_reiyaue.png" alt="" class="layer-3">
       <div class="picture">
-      </div>
-      <div class="photo">
-        <div id="p1722">
-          <div class="h-flex">
-            <div><button class="btn js-stop">
-                <img class="camera-button" src='src/backspace.png' alt='return home'>
-              </button></div>
-            <div><button class="btn js-start">
-                <img class="camera-button" src="src/photo_camera.png" alt="start camera">
-              </button></div>
-            <div><button class="btn js-change">
-                <img class="camera-button" src="src/change.png" alt="">
-              </button></div>
-            <div><button class="btn" id="takePhotoButton">
-                <img class="camera-button" src="src/camera.png" alt="take a photo">
-              </button></div>
-          </div>
-          <div>
-            <div class="js-camera">
-            <video width="640" height="480" id="video" autoplay="autoplay"></video>
-          </div>
-        </div>
       </div>
       <canvas id="canvas" style="display: none;"></canvas>
       <button class="btn btn-lg button" onclick="location.href='walking.html'">
