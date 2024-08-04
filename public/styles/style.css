@@ -88,9 +88,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  /* background:
-  url("../src/haikei_reiyaue.png") center / cover,
-  url("../src/haikei_reiyasita.png") center / cover; */
 }
 
 .layer-1 {
