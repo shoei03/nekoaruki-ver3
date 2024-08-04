@@ -70,6 +70,7 @@ body {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 4;
 }
 
 .menu {
@@ -88,6 +89,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  padding: 0;
 }
 
 .layer-1 {
@@ -108,19 +110,6 @@ body {
   left: 0;
   z-index: 3;
   pointer-events: none; /* 透明部分をクリック可能にする */
-}
-
-.obstacle-1 {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-}
-
-.obstacle-2 {
-  position: absolute;
-  left: 0;
-  bottom: 200px;
-  z-index: 2;
 }
 
 .picture-container {
@@ -148,6 +137,12 @@ body {
   max-height: 100%;
 }
 
+.photo {
+  z-index: 4;
+  background-color: rgba(25, 135, 84, 0.7); /* 暗めの色 (黒) と透過 (50%) */
+  width: 100%;
+}
+
 .photo-button {
   min-height: 56px;
   border: none;
@@ -157,7 +152,6 @@ body {
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
 }
 
 #home-button {
@@ -169,11 +163,11 @@ body {
   position: fixed;
   left: 20%;
   transform: translateX(-50%);
-  z-index: 3;
 }
 
 .h-flex {
   display: flex;
+  justify-content: space-around;
 }
 
 .camera-button {
