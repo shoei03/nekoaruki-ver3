@@ -40,7 +40,7 @@ const displayCatsFromLastFourDays = async () => {
     const picture = document.querySelector(".picture");
     recentCats.forEach(cat => {
       picture.innerHTML += `
-        <img src="${cat.catImageURL}" id="movableCat">
+        <img src="${cat.catImageURL}" id="movableCat" class="layer-2">
       `;
     });
   } else {

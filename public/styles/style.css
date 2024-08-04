@@ -88,9 +88,29 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background:
-  url("../src/haikei_2.png") center / cover,
-  url("../src/haikei.png") center / cover;
+  /* background:
+  url("../src/haikei_reiyaue.png") center / cover,
+  url("../src/haikei_reiyasita.png") center / cover; */
+}
+
+.layer-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.layer-2 {
+  z-index: 2;
+  pointer-events: auto; /* クリックイベントを有効にする */
+}
+
+.layer-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none; /* 透明部分をクリック可能にする */
 }
 
 .obstacle-1 {
