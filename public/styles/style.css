@@ -4,13 +4,16 @@
   cursor: grab; /* 画像を掴むためのカーソル表示 */
 }
 
-html,
-body {
+html, body {
   overflow: hidden;
 }
 
 body {
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    'Noto Sans JP',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   height: 100vh;
 }
 
@@ -85,7 +88,8 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("") center / cover;
+  background: url("../src/haikei2.png")
+    center / cover;
 }
 
 .obstacle-1 {
@@ -149,6 +153,16 @@ body {
   transform: translateX(-50%);
   z-index: 3;
 }
+
+.h-flex {
+  display: flex;
+}
+
+.camera-button {
+  width: 70px;
+  height: 70px;
+}
+
 
 /* ハンバーガーボタン */
 .hamburger {
