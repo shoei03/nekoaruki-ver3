@@ -38,8 +38,8 @@ jQuery(($) => {
 	let setting = {
 		audio: false,
 		video: {
-			width: 480,
-			height: 640,
+			width: 300,
+			height: 600,
 			facingMode: {exact: 'environment'},
 			// facingMode: 'user',
 		},
