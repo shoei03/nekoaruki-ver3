@@ -94,9 +94,8 @@ body {
 
 .layer-1 {
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 .layer-2 {
@@ -106,10 +105,9 @@ body {
 
 .layer-3 {
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 3;
   pointer-events: none; /* 透明部分をクリック可能にする */
+  object-fit: cover;
 }
 
 .picture-container {
