@@ -107,7 +107,6 @@ const saveNotificationTime = async (startTime, endTime, days, id) => {
   const userId = await getCurrentUserId();
   try {
     await setDoc(doc(db, `users/${userId}/notificationSettings`, id), { startTime, endTime, days });
-    console.log(`通知時間 (ID: ${id}) が正常に保存されました、曜日: ${days}`);
   } catch (error) {
     console.error(`通知時間 (ID: ${id}) の保存中にエラーが発生しました:`, error);
     throw error;
@@ -129,7 +128,6 @@ const deleteNotificationTime = async (id) => {
   const userId = await getCurrentUserId();
   try {
     await deleteDoc(doc(db, `users/${userId}/notificationSettings`, id));
-    console.log(`通知時間 (ID: ${id}) が正常に削除されました`);
   } catch (error) {
     console.error(`通知時間 (ID: ${id}) の削除中にエラーが発生しました:`, error);
     throw error;

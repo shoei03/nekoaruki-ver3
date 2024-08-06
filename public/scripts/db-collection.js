@@ -111,7 +111,6 @@ async function getImagesFromStorage(imagesRef) {
     try {
         const result = await listAll(imagesRef);
         if (result.items.length === 0) {
-            console.log("No images found in the photos folder.");
             return;
         }
         result.items.forEach(async (imageRef) => {

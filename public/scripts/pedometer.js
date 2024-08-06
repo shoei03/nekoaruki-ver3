@@ -41,7 +41,6 @@ async function loadUserGoals() {
 
     if (docSnap.exists()) {
       ({ firstGoal, secondGoal } = docSnap.data()); // 更新
-      console.log('ユーザーデータが取得されました:', docSnap.data());
       updateGoalCount(steps, firstGoal, secondGoal); // 初期歩数を0として更新
     } else {
       console.log('ユーザーデータが存在しません');

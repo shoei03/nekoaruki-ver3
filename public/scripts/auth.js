@@ -31,8 +31,6 @@ if (signupButton) {
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      // サインアップ成功
-      console.log("サインアップ成功!", userCredential.user);
       // 目標歩数の初期設定
       const userId = userCredential.user.uid;
       const goalDocs = await doc(db, 'users', userId);
@@ -40,7 +38,6 @@ if (signupButton) {
       // ホームページにリダイレクト
       window.location.href = "index.html";
     } catch (error) {
-      console.error('サインアップエラー', error); // ログに詳細なエラーを記録
       alert('サインアップエラーが発生しました。'); // 一般化されたメッセージを表示
     }
   });
@@ -55,11 +52,8 @@ if (loginButton) {
 
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      // ログイン成功
-      console.log("ログイン成功!");
       window.location.href = "index.html";
     } catch (error) {
-      console.error('ログインエラー', error); // ログに詳細なエラーを記録
       alert('ログインエラーが発生しました。'); // 一般化されたメッセージを表示
     }
   });
@@ -72,10 +66,9 @@ if (logoutButton) {
     try {
       await signOut(auth);
       // ログアウト成功
-      console.log("ログアウトしました");
       window.location.href = "login.html"; // ログインページにリダイレクト
     } catch (error) {
-      console.error("ログアウトエラー", error);
+      alart("ログアウトエラー", error);
     }
   });
 }
@@ -85,13 +78,11 @@ const authContainer = document.querySelectorAll('.auth-container');
 document.addEventListener('DOMContentLoaded', async () => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log(`ユーザーがログインしています: ${user.email}`);
       logoutButton.style.display = 'block'; // ログアウトボタンを表示
       authContainer.forEach((container) => {
         container.style.display = 'none'; // ログインフォームを非表示
       });
     } else {
-      console.log("ユーザーがログアウトしています。");
       logoutButton.style.display = 'none'; // ログアウトボタンを非表示
       authContainer.forEach((container) => {
         container.style.display = 'block'; // ログインフォームを表示

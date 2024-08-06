@@ -46,7 +46,6 @@ const updateGoal = async (element, newValue) => {
 const saveGoal = async (goalDocs, ...goals) => {
     try {
         await setDoc(goalDocs, { firstGoal: goals[0], secondGoal: goals[1] });
-        console.log('目標が正常に保存されました');
     } catch (error) {
         console.error('目標の保存中にエラーが発生しました:', error);
     }

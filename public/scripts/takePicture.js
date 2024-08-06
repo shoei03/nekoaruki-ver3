@@ -142,7 +142,6 @@ jQuery(($) => {
             const storageRef = ref(storage, `photos/${userId}/` + new Date().toISOString() + '.png');
             await uploadBytes(storageRef, blob);
             const downloadURL = await getDownloadURL(storageRef);
-            console.log('File available at', downloadURL);
         } catch (error) {
             console.error('Error uploading file:', error);
         }
