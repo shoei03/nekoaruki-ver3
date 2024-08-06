@@ -59,18 +59,15 @@ body {
 }
 
 .button {
-  min-height: 56px;
-  width: 80%;
-  background-color: var(--bs-green);
+  width: 100px;
+  height: 100px;
   border: none;
-  color: var(--bs-white);
   cursor: pointer;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 4;
+  z-index: 3;
 }
 
 .menu {
@@ -131,234 +128,97 @@ body {
 }
 
 #video {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.blank {
+  height: 50vh;
+  width: 100%;
 }
 
 .start-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   display: block;
 }
 
 .stop-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   display: none;
+  z-index: 10;
 }
 
 .change-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  bottom: 100px;
-  right: 20px;
+  bottom: 0;
+  left: 0;
   display: none;
+  z-index: 10;
 }
 
 .take-photo-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  bottom: 100px;
-  left: 50%;
+  bottom: 0;
+  left: 40%;
   display: none;
-}
-
-
-
-/* ハンバーガーボタン */
-.hamburger {
-  display: block;
-  height: 60px;
-  margin-left: auto;
-  position: relative;
   z-index: 10;
-  width: 60px;
-  border: none;
-  background-color: transparent;
 }
-.hamburger.-active .hamburger__line {
-  background-color: transparent;
-}
-.hamburger.-active .hamburger__line::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-.hamburger.-active .hamburger__line::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-.hamburger.-active .hamburger__text::before {
-  content: "閉じる";
-}
-.hamburger__line {
-  display: block;
-  height: 2px;
-  position: absolute;
-  top: 23px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 24px;
-  background-color: #172e59;
-  transition: 0.4s;
-}
-.hamburger__line:before,
-.hamburger__line:after {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  background-color: #172e59;
-  transition: inherit;
-}
-.hamburger__line:before {
-  top: -6px;
-}
-.hamburger__line:after {
-  top: 6px;
-}
-.hamburger__text {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-}
-.hamburger__text::before {
-  content: "メニュー";
-  text-align: center;
-  color: #172e59;
-  font-size: 10px;
-  font-weight: 900;
-}
-.header__nav-area {
+
+.flash {
   position: fixed;
   top: 0;
-  left: -100%;
-  z-index: 9;
-  height: 100vh;
-  width: 100%;
-  visibility: hidden;
-  padding-top: 60px;
-  background-color: #fff;
-  transition: 0.4s;
-}
-.header__nav-area.-active {
   left: 0;
-  visibility: visible;
-}
-.global-navigation {
-  padding-top: 40px;
-  padding-right: 25px;
-  padding-bottom: 120px;
-  padding-left: 25px;
-}
-.global-navigation__list > li {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #e7e9ee;
-}
-.global-navigation__list > li + li {
-  margin-top: 20px;
-}
-.global-navigation__link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #172e59;
-  font-weight: 900;
-  transition: color 0.4s;
-  font-size: 1.5rem;
-}
-.global-navigation__link.-accordion {
-  position: relative;
-  background: none;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   width: 100%;
-  padding: 0;
+  height: 100%;
+  background: white;
+  opacity: 0.8;
+  z-index: 9999;
+  pointer-events: none;
+  animation: flashAnimation 0.5s ease-out;
 }
-.global-navigation__link.-accordion::after {
-  content: "";
-  display: block;
-  height: 12px;
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  width: 2px;
-  background-color: #ed3242;
-  transform: translateY(-50%);
-  transition: transform 0.4s;
-}
-.global-navigation__link.-accordion::before {
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 12px;
-  background-color: #ed3242;
-  transform: translateY(-50%);
-}
-.global-navigation__link.-active::after {
-  transform: translateY(-50%) rotate(-90deg);
-}
-.accordion {
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transition: 0.4s;
-}
-.accordion.-active {
-  height: auto;
-  padding-top: 30px;
-  visibility: visible;
-}
-.accordion__list li {
-  font-size: 0.75rem;
-}
-.accordion__list li + li {
-  margin-top: 21px;
-}
-.accordion__link {
-  color: #172e59;
+
+@keyframes flashAnimation {
+  from { opacity: 0.8; }
+  to { opacity: 0; }
 }
 
 .menu-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  right: 0;
   z-index: 4;
   display: block;
 }
 
 .close-button {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 4;
+  top: 0;
+  right: 0;
+  z-index: 5;
   display: none;
 }
 
 .popup {
   display: none; /* 初期状態では表示しない */
   position: fixed;
-  width: 80%;
-  height: 60vh;
+  width: 100%;
+  height: 30vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

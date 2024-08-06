@@ -12,6 +12,20 @@
     />
   </head>
   <body>
+    <div class="photo">
+      <div id="p1722">
+        <div class="h-flex">
+          <img class="start-button js-start" id="js-start" src="src/nekoaruki_syasin.png" alt="start camera">
+          <img class="stop-button js-stop" id="js-stop" src='src/nekoaruki_cameratojiru-1.png' alt='return home'>
+          <img class="change-button js-change" id="js-change" src="src/nekoareuki_kirikae.png" alt="">
+          <img class="take-photo-button" id="takePhotoButton" src="src/nekoaruki_toru.png" alt="take a photo">
+        </div>
+        <div>
+          <div class="js-camera">
+          <video id="video" autoplay="autoplay"></video>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="progress-circle">
         <div class="distance">
@@ -30,18 +44,17 @@
           ;
         />
       </div>
-      <button type="button" class="btn btn-primary btn-lg button" onclick="location.href='index.html'" id="end-btn">
-        おわる
-      </button>
-      <button type="button" id="my_btn">通知</button>
+      <a href="index.html">
+        <img src="src/nekoaruki_owaru.png" class="button" id="returnButton" alt="">
+      </a>
     </div>
+    <div class="blank"></div>
     <script type="module" src="scripts/firebase-config.js"></script>
     <script type="module" src="scripts/getCurrentUserId.js"></script>
     <script type="module" src="scripts/displayTodaysCat.js"></script>
     <script type="module" src="scripts/pedometer.js"></script>
     <script type="module" src="scripts/db-get-notification.js"></script>
-    <!-- <script src="scripts/registerServiceWorker.js"></script>
-    <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="scripts/takePicture.js"></script>
   </body>
 </html>
