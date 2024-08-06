@@ -1,13 +1,25 @@
 // 画像ファイルのパスを含む配列
 const catImages = [
-  'src/わだにゃん.png',
-  'src/nekoaruki_haiiro_ikari.png',
-  'src/nekoaruki_haiiro_tobi.png',
   'src/nekoaruki_haiiro_amae.png',
+  'src/nekoaruki_haiiro_aruki.png',
+  'src/nekoaruki_haiiro_ikari.png',
+  'src/nekoaruki_haiiro_nekorobi.png',
+  'src/nekoaruki_haiiro_neru.png',
   'src/nekoaruki_haiiro_nobi.png',
+  'src/nekoaruki_haiiro_tobi.png',
+  'src/nekoaruki_haiiro_ushiro.png',
+  'src/nekoaruki_mike_amae.png',
+  'src/nekoaruki_mike_ikari.png',
   'src/nekoaruki_mike_nekorobi.png',
+  'src/nekoaruki_mike_neru.png',
+  'src/nekoaruki_mike_tobi.png',
+  'src/nekoaruki_mike_ushiro.png',
+  'src/nekoaruki_siro_amae.png',
+  'src/nekoaruki_siro_nekorobi.png',
+  'src/nekoaruki_siro_neru.png',
+  'src/nekoaruki_siro_nobi.png',
   'src/nekoaruki_siro_tobi.png',
-  // 他の画像ファイルのパスを追加
+  'src/nekoaruki_siro_ushiro.png',
 ];
 export { catImages };
 
