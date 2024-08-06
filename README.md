@@ -11,30 +11,9 @@
 
 ## 目次
 
-- [インストール](#インストール)
 - [使用方法](#使用方法)
 - [ディレクトリ構造](#ディレクトリ構造)
 - [連絡先](#連絡先)
-
-
-## インストール
-
-プロジェクトのインストール手順を記載します。
-
- リポジトリをクローン
-git clone https://github.com/Yama35359/supportxsupport
-
- ディレクトリに移動
-cd supportxsupport
-
- 依存関係をインストール
-npm install
-
- ローカルサーバーを立ち上げる
-npm run serve
-
- 出力されるURLにアクセス
-例：http://localhost:8080/
 
 
 ## 使用方法
