@@ -14,14 +14,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="shortcut icon"
-      href="src/nekoaruki_logo.png"
-    />
-    <link rel="manifest" href="/public/manifest.json">
+    <link rel="shortcut icon" href="src/nekoaruki_logo.png" />
+    <link rel="manifest" href="/public/manifest.json" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="photo">
         <div id="p1722">
           <div class="h-flex">
@@ -87,13 +84,18 @@
           </nav>
         </div>
       </div>
-    </header>
+    </header> -->
+    <img
+      src="src/nekoaruki_menu.png"
+      alt="menu button"
+      class="menu-button"
+      id="menu-button"
+    />
     <div class="container full">
-      <img src="src/haikei_reiyasita.png" alt="" class="layer-1">
-      <img src="src/haikei_reiyaue.png" alt="" class="layer-3">
-      <div class="picture">
-      </div>
-      <canvas id="canvas" style="display: none;"></canvas>
+      <img src="src/haikei_reiyasita.png" alt="" class="layer-1" />
+      <img src="src/haikei_reiyaue.png" alt="" class="layer-3" />
+      <div class="picture"></div>
+      <canvas id="canvas" style="display: none"></canvas>
       <button class="btn btn-lg button" onclick="location.href='walking.html'">
         あるく
       </button>
