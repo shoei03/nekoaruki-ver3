@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const notificationTime = generateRandomNotificationTime(data);
         console.log(`通知時刻: ${notificationTime}`);
         // 通知を送信
-        scheduleNotification(notificationTime);
+        // scheduleNotification(notificationTime);
         return;
       }
     });
