@@ -19,28 +19,6 @@
   </head>
   <body>
     <!-- <header class="header">
-      <div class="photo">
-        <div id="p1722">
-          <div class="h-flex">
-            <div><button class="btn js-stop">
-                <img class="camera-button" src='src/backspace.png' alt='return home'>
-              </button></div>
-            <div><button class="btn js-start">
-                <img class="camera-button" src="src/photo_camera.png" alt="start camera">
-              </button></div>
-            <div><button class="btn js-change">
-                <img class="camera-button" src="src/change.png" alt="">
-              </button></div>
-            <div><button class="btn" id="takePhotoButton">
-                <img class="camera-button" src="src/camera.png" alt="take a photo">
-              </button></div>
-          </div>
-          <div>
-            <div class="js-camera">
-            <video width="300" height="600" id="video" autoplay="autoplay"></video>
-          </div>
-        </div>
-      </div>
       <div class="header__inner">
         <button
           id="js-hamburger"
@@ -89,8 +67,29 @@
       src="src/nekoaruki_menu.png"
       alt="menu button"
       class="menu-button"
-      id="menu-button"
+      id="popupButton"
     />
+    <img
+      src="src/nekoaruki_tojiru2.png"
+      alt="close-button"
+      class="close-button"
+      id="closeButton"
+    />
+    <div id="popupOverlay" class="popup-overlay"></div>
+    <div id="popup" class="popup">
+      <a href="login.html"
+        ><img class="a-img" src="src/nekoaruki_login.png" alt=""
+      /></a>
+      <a href="collection.html"
+        ><img class="a-img" src="src/nekoaruki_core.png" alt=""
+      /></a>
+      <a href="goal-setting.html"
+        ><img class="a-img" src="src/nekoaruki_hosu2.png" alt=""
+      /></a>
+      <a href="notification-setting.html"
+        ><img class="a-img" src="src/nekoaruki_tuti2.png" alt=""
+      /></a>
+    </div>
     <div class="container full">
       <img src="src/haikei_reiyasita.png" alt="" class="layer-1" />
       <img src="src/haikei_reiyaue.png" alt="" class="layer-3" />
@@ -104,7 +103,6 @@
     <script type="module" src="scripts/firebase-config.js"></script>
     <script type="module" src="scripts/movePicture.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="scripts/takePicture.js"></script>
+    <script src="scripts/popup.js"></script>
   </body>
 </html>

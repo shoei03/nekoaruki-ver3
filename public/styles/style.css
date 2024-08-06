@@ -135,46 +135,42 @@ body {
   max-height: 100%;
 }
 
-.photo {
-  z-index: 4;
-  background-color: rgba(25, 135, 84, 0.7); /* 暗めの色 (黒) と透過 (50%) */
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.start-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: block;
 }
 
-.photo-button {
-  min-height: 56px;
-  border: none;
-  color: var(--bs-white);
-  cursor: pointer;
+.stop-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+
+.change-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: none;
+}
+
+.take-photo-button {
+  width: 60px;
+  height: 60px;
   position: fixed;
   bottom: 100px;
   left: 50%;
-  transform: translateX(-50%);
+  display: none;
 }
 
-#home-button {
-  min-height: 56px;
-  width: 80%;
-  border: none;
-  color: var(--bs-white);
-  cursor: pointer;
-  position: fixed;
-  left: 20%;
-  transform: translateX(-50%);
-}
-
-.h-flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-.camera-button {
-  width: 60px;
-  height: 60px;
-}
 
 
 /* ハンバーガーボタン */
@@ -336,4 +332,58 @@ body {
 }
 .accordion__link {
   color: #172e59;
+}
+
+.menu-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+  display: block;
+}
+
+.close-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+  display: none;
+}
+
+.popup {
+  display: none; /* 初期状態では表示しない */
+  position: fixed;
+  width: 80%;
+  height: 60vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+  background-image: url('../src/nekoaruki_menuhontai.png'); /* 画像のパスを指定 */
+  background-size: cover;
+  background-position: center;
+}
+
+.popup-overlay {
+  display: none; /* 初期状態では表示しない */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.a-img {
+  width: 80px;
+  height: 80px;
 }
