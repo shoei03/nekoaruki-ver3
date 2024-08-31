@@ -12,7 +12,6 @@
 ## 目次
 
 - [使用方法](#使用方法)
-- [ディレクトリ構造](#ディレクトリ構造)
 - [連絡先](#連絡先)
 
 
@@ -24,67 +23,6 @@ https://nekoaruki-ver3.web.app
 URLにアクセスすると、ログイン画面へ強制的に遷移する。
 ログイン or サインアップが完了するとホーム画面へ遷移する。
 ログインすると、歩数をカウント、歩数の設定、写真の撮影が行えるようになる。
-
-##ディレクトリ構造
-└─.firebase
-└─node_modules
-└─public
-    │  404.html
-    │  collection.html
-    │  goal-setting.html
-    │  index.html
-    │  login.html
-    │  manifest.json
-    │  notification-setting.html
-    │  walking.html
-    │
-    ├─scripts
-    │      auth.js
-    │      db-collection.js
-    │      db-get-notification.js
-    │      db-set-goalsteps.js
-    │      db-set-notification.js
-    │      displayTodaysCat.js
-    │      firebase-config.js
-    │      getCurrentUserId.js
-    │      hamburger.js
-    │      movePicture.js
-    │      pedometer.js
-    │      permission.js
-    │      takePicture.js
-    │
-    ├─src
-    │      add.png
-    │      arrow_back.png
-    │      arrow_forward.png
-    │      backspace.png
-    │      camera.png
-    │      change.png
-    │      delete.png
-    │      edit.png
-    │      haikei_reiyasita.png
-    │      haikei_reiyaue.png
-    │      nekoaruki_haiiro_amae.png
-    │      nekoaruki_haiiro_aruki.png
-    │      nekoaruki_haiiro_ikari.png
-    │      nekoaruki_haiiro_nobi.png
-    │      nekoaruki_haiiro_tobi.png
-    │      nekoaruki_haiiro_tsukami.png
-    │      nekoaruki_logo.png
-    │      nekoaruki_mike_nekorobi.png
-    │      nekoaruki_siro_tobi.png
-    │      photo_camera.png
-    │      わだにゃん.png
-    │
-    └─styles
-            setting.css
-            style.css
-    .firebaserc
-    .gitignore
-    firebase.json
-    package-lock.json
-    package.json
-    README.md
 
 
 ##　連絡先
